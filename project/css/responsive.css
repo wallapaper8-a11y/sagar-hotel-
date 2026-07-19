@@ -54,3 +54,17 @@
   .brand-name { font-size: 1.05rem; }
   .hero-sub { font-size: 0.95rem; }
 }
+/* Mobile screen overflow fix */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Yeh right-side scroll ko forcefully band karega */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar container mobile size safety */
+.site-header .container, 
+header .container {
+    max-width: 100% !important;
+    box-sizing: border-box;
+}

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   ANIMATION.CSS — keyframes, scroll-reveal utility classes, motion helpers
+   ========================================================================== */
+
+@keyframes kenburns {
+  0%   { transform: scale(1) translate(0,0); }
+  100% { transform: scale(1.12) translate(-1.5%, -1.5%); }
+}
+
+@keyframes scrollLine {
+  0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; opacity: 0.4; }
+}
+
+@keyframes loading {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  100% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+}
+
+/* ---- Scroll reveal base state: JS toggles .in-view via IntersectionObserver ---- */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-luxury), transform 0.9s var(--ease-luxury);
+}
+[data-reveal="fade-up"]   { transform: translateY(40px); }
+[data-reveal="fade"]      { transform: none; }
+[data-reveal="zoom"]      { transform: scale(0.92); }
+[data-reveal="left"]      { transform: translateX(-60px); }
+[data-reveal="right"]     { transform: translateX(60px); }
+
+[data-reveal].in-view {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Stagger helper: add data-delay="1".."6" for staggered children */
+[data-delay="1"] { transition-delay: 0.08s; }
+[data-delay="2"] { transition-delay: 0.16s; }
+[data-delay="3"] { transition-delay: 0.24s; }
+[data-delay="4"] { transition-delay: 0.32s; }
+[data-delay="5"] { transition-delay: 0.4s; }
+[data-delay="6"] { transition-delay: 0.48s; }
+
+.float-whatsapp { animation: pulseRing 2.4s infinite; }
+
+.typing-cursor { animation: blink 0.8s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] { opacity: 1; transform: none; }
+}

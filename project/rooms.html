@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms &amp; Suites | Sagar Hotel </title>
+<meta name="description" content="Explore heritage rooms, deluxe rooms, and the Maharaja &amp; Presidential Suites at Sagar Hotel . Book directly for the best rate.">
+<meta name="keywords" content="hotel rooms BIHAR, luxury suites BIHAR, book hotel room Bihar">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-mark">HERITAGE</div>
+  <div class="preloader-bar"></div>
+</div>
+
+<header class="site-header transparent">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">S</span>
+      <span class="brand-name" data-hotel-name>Sagar Hotel <span data-hotel-tagline>Heritage Redefined, Luxury Reimagined</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html" class="active">Rooms &amp; Suites</a>
+      <a href="dining.html">Dining</a>
+      <a href="banquet.html">Events &amp; Banquets</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#booking" class="btn btn-gold btn-sm">Book Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img src="images/8.jpeg" alt="Luxury suite bedroom at Sagar Hotel " loading="eager">
+  <div class="page-hero-content">
+    <div class="eyebrow">Stay With Us</div>
+    <h1>Rooms &amp; Suites</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Rooms &amp; Suites</div>
+  </div>
+</section>
+
+<!-- ============ ROOM FILTER + GRID ============ -->
+<section class="section" id="rooms">
+  <div class="container">
+    <div class="section-head" data-reveal="fade">
+      <div class="eyebrow">Accommodation</div>
+      <h2>Choose Your Retreat</h2>
+      <p>Every category is fitted with premium linens, a rain shower, in-room dining, and complimentary high-speed Wi-Fi.</p>
+    </div>
+
+    <div class="gallery-filters" data-reveal="fade">
+      <button class="filter-btn active" data-room-filter="all">All Rooms</button>
+      <button class="filter-btn" data-room-filter="rooms">Rooms</button>
+      <button class="filter-btn" data-room-filter="suites">Suites</button>
+    </div>
+
+    <div class="grid grid-3" id="room-grid">
+
+      <article class="card" data-room-category="rooms" data-reveal="fade-up">
+        <div class="card-media"><span class="card-tag">Popular</span><img src="images/heritage-room.jpg" alt="Heritage Room" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Heritage Room</h3>
+          <p>32 sqm of classic comfort with a private balcony and city views.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 2 Guests</span><span>&#128444; 32 sqm</span><span>&#128715; 1 King Bed</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹7,500<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-room-category="rooms" data-reveal="fade-up" data-delay="1">
+        <div class="card-media"><img src="images/deluex-room.jpeg" alt="Deluxe Room interior" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Deluxe Room</h3>
+          <p>42 sqm featuring a lounge nook and marble bath.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 2-3 Guests</span><span>&#128444; 42 sqm</span><span>&#128715; 1 King Bed</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹10,200<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-room-category="rooms" data-reveal="fade-up" data-delay="2">
+        <div class="card-media"><img src="images/double bed.jpeg" alt="Executive Twin Room" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Executive Twin</h3>
+          <p>38 sqm with two queen beds, ideal for colleagues or friends.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 2 Guests</span><span>&#128444; 38 sqm</span><span>&#128715; 2 Queen Beds</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹9,400<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-room-category="suites" data-reveal="fade-up">
+        <div class="card-media"><span class="card-tag">Signature</span><img src="images/10.jpeg" alt="Maharaja Suite living room" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Maharaja Suite</h3>
+          <p>68 sqm of palatial living with a private butler on call.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 3 Guests</span><span>&#128444; 68 sqm</span><span>&#128715; 1 King Bed + Lounge</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹18,900<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-room-category="suites" data-reveal="fade-up" data-delay="1">
+        <div class="card-media"><img src="images/royal.jpeg" alt="Royal Heritage Suite" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Royal Heritage Suite</h3>
+          <p>80 sqm with a private dining alcove and jharokha-style balcony.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 3-4 Guests</span><span>&#128444; 80 sqm</span><span>&#128715; 1 King Bed</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹24,500<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-room-category="suites" data-reveal="fade-up" data-delay="2">
+        <div class="card-media"><span class="card-tag">Premium</span><img src="images/pri.jpeg" alt="Presidential Suite" loading="lazy"></div>
+        <div class="card-body">
+          <h3>Presidential Suite</h3>
+          <p>140 sqm spanning a full corner of the top floor, with a private terrace.</p>
+          <div class="room-meta" style="display:flex;gap:0.9rem;font-size:0.78rem;color:var(--color-text-muted);margin:0.6rem 0;">
+            <span>&#128100;&#128100; 4 Guests</span><span>&#128444; 140 sqm</span><span>&#128715; 1 King + 1 Twin</span>
+          </div>
+          <div class="card-meta"><span class="card-price">₹42,000<span>/night</span></span><a href="#booking" class="btn btn-sm btn-dark">Book</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROOM AMENITIES STRIP ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal="fade">
+      <div class="eyebrow">In Every Room</div>
+      <h2>Comforts You Can Expect</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="amenity-card card" data-reveal="zoom"><div class="amenity-icon">&#128246;</div><h3>High-Speed Wi-Fi</h3><p>Complimentary throughout your stay.</p></div>
+      <div class="amenity-card card" data-reveal="zoom" data-delay="1"><div class="amenity-icon">&#127831;</div><h3>24-Hour Dining</h3><p>In-room dining available round the clock.</p></div>
+      <div class="amenity-card card" data-reveal="zoom" data-delay="2"><div class="amenity-icon">&#128717;</div><h3>Rain Showers</h3><p>Marble bathrooms with premium toiletries.</p></div>
+      <div class="amenity-card card" data-reveal="zoom" data-delay="3"><div class="amenity-icon">&#128273;</div><h3>Smart Access</h3><p>Keyless entry &amp; in-room climate control.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FULL BOOKING FORM ============ -->
+<section class="section" id="booking">
+  <div class="container">
+    <div class="section-head" data-reveal="fade">
+      <div class="eyebrow">Reserve Your Stay</div>
+      <h2>Book Directly for the Best Rate</h2>
+      <p>Fill in your details and choose how you'd like us to confirm your reservation.</p>
+    </div>
+    <form class="booking-form-full" data-reveal="fade-up" data-booking-form>
+      <div class="grid grid-2">
+        <div class="field">
+          <label for="rm-name">Full Name</label>
+          <input type="text" id="rm-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="rm-phone">Phone Number</label>
+          <input type="tel" id="rm-phone" name="phone" placeholder="+91 98765 43210" required>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="field">
+          <label for="rm-email">Email Address</label>
+          <input type="email" id="rm-email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="rm-guests">Guests</label>
+          <select id="rm-guests" name="guests" required>
+            <option value="">Select</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="field">
+          <label for="rm-checkin">Check-in Date</label>
+          <input type="date" id="rm-checkin" name="checkin" required>
+        </div>
+        <div class="field">
+          <label for="rm-checkout">Check-out Date</label>
+          <input type="date" id="rm-checkout" name="checkout">
+        </div>
+      </div>
+      <div class="field">
+        <label for="rm-room">Room Type</label>
+        <select id="rm-room" name="roomType" required>
+          <option value="">Select a room type</option>
+          <option>Heritage Room</option>
+          <option>Deluxe Room</option>
+          <option>Executive Twin</option>
+          <option>Maharaja Suite</option>
+          <option>Royal Heritage Suite</option>
+          <option>Presidential Suite</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="rm-notes">Special Requests (optional)</label>
+        <textarea id="rm-notes" name="notes" rows="3" placeholder="Airport pickup, early check-in, anniversary setup..." style="border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:0.7rem 0.9rem;background:var(--color-cream);width:100%;"></textarea>
+      </div>
+      <div class="booking-channels">
+        <button type="submit" class="btn btn-dark" data-action="whatsapp">Book via WhatsApp</button>
+        <button type="submit" class="btn btn-outline" style="color:var(--color-primary);border-color:var(--color-primary)" data-action="call">Request a Callback</button>
+        <button type="submit" class="btn btn-gold" data-action="email">Send by Email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-icon">✓</div>
+    <h3>Enquiry Received</h3>
+    <p>Thank you, <span data-modal-name>Guest</span>. Our reservations team will reach out shortly to confirm your booking.</p>
+    <button class="btn btn-dark modal-close" data-modal-close>Close</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name" style="color:var(--color-gold-light)" data-hotel-name>Sagar Hotel </span>
+      <p data-hotel-tagline>Heritage Redefined, Luxury Reimagined</p>
+      <p style="margin-top:1rem" data-hotel-address>Beer Chand Patel Path, BIHAR, Bihar 800001, India</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="banquet.html">Banquets</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919031182614" data-hotel-phone>+91 903 118 2614</a></li>
+        <li><a href="mailto:sagarsharma51965@gmail.com" data-hotel-email>sagarsharma51965@gmail.com</a></li>
+        <li><a href="contact.html">Get Directions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p style="font-size:0.85rem;color:rgba(250,246,238,0.7)">Offers &amp; heritage stories, once a month.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-gold btn-sm">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Sagar Hotel . All rights reserved.</span>
+    <span>Crafted with heritage &amp; heart.</span>
+  </div>
+</footer>
+
+<div class="float-stack">
+  <button class="float-btn back-to-top" aria-label="Back to top">↑</button>
+  <a href="#" class="float-btn float-call" data-call-link aria-label="Call the hotel">📞</a>
+  <a href="#" class="float-btn float-whatsapp" data-whatsapp-link="Hello, I would like to book a room at Sagar Hotel ." aria-label="Chat on WhatsApp">💬</a>
+</div>
+
+<div class="cookie-banner">
+  <div class="cookie-inner">
+    <p>We use cookies to enhance your browsing experience and analyse site traffic. By continuing, you agree to our use of cookies.</p>
+    <div style="display:flex;gap:0.6rem;">
+      <button class="btn btn-outline btn-sm" style="color:var(--color-cream);border-color:var(--color-cream)" data-cookie-action="declined">Decline</button>
+      <button class="btn btn-gold btn-sm" data-cookie-action="accepted">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+<script>
+  // Simple room-type filter (separate from the gallery/room grid filter buttons)
+  document.querySelectorAll('[data-room-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-room-filter]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.roomFilter;
+      document.querySelectorAll('#room-grid > article').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.roomCategory === cat) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

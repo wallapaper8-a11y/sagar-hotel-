@@ -1,0 +1,56 @@
+/* ==========================================================================
+   RESPONSIVE.CSS — mobile-first breakpoint overrides
+   ========================================================================== */
+
+/* ---------- Large desktop tighten (below 1200) ---------- */
+@media (max-width: 1200px) {
+  .masonry { columns: 3 200px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Tablet (below 992) ---------- */
+@media (max-width: 992px) {
+  .split { grid-template-columns: 1fr; }
+  .split-media { order: -1; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .booking-bar { grid-template-columns: repeat(2, 1fr); margin-top: -40px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .masonry { columns: 2 200px; }
+}
+
+/* ---------- Navigation collapse (below 900) ---------- */
+@media (max-width: 900px) {
+  .nav-toggle { display: flex; z-index: 60; }
+  .nav-links {
+    position: fixed; inset: 0 0 0 auto; width: min(320px, 80%); height: 100vh;
+    background: rgba(28,18,16,0.98); flex-direction: column; justify-content: center;
+    align-items: flex-start; padding: var(--space-xl) var(--space-lg);
+    transform: translateX(100%); transition: transform var(--dur-med) var(--ease-luxury);
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-cta { display: none; }
+  body.nav-open { overflow: hidden; }
+}
+
+/* ---------- Mobile (below 700) ---------- */
+@media (max-width: 700px) {
+  :root { --space-xl: 4.5rem; --space-lg: 2.5rem; }
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .booking-bar { grid-template-columns: 1fr; margin-top: var(--space-sm); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn { width: 100%; }
+  .masonry { columns: 1 100%; }
+  .page-hero { height: 44vh; }
+  .float-stack { right: 14px; bottom: 14px; }
+  .float-btn { width: 48px; height: 48px; font-size: 1.25rem; }
+}
+
+/* ---------- Small mobile (below 420) ---------- */
+@media (max-width: 420px) {
+  .container { padding-inline: 1.1rem; }
+  .brand-name { font-size: 1.05rem; }
+  .hero-sub { font-size: 0.95rem; }
+}

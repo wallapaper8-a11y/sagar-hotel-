@@ -68,25 +68,3 @@ header .container {
     max-width: 100% !important;
     box-sizing: border-box;
 }
-/* ---- COOKIE BANNER MOBILE FIX ---- */
-.cookie-banner, 
-#cookie-banner, 
-.cookie-consent, 
-[class*="cookie"] {
-    position: fixed !important;
-    bottom: 20px !important; /* Screen ke aakhri kinare se 20px upar shift karne ke liye */
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 90% !important; /* Pura tight chipakne ke bajaye thoda gap rahega */
-    max-width: 420px !important;
-    z-index: 999999 !important; /* Baaki saari cheezon ke upar dikhne ke liye */
-    border-radius: 12px !important; /* Mast clean look */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
-}
-
-/* Cookie ke andar ke buttons mobile par sahi dikhein */
-[class*="cookie"] button,
-#cookie-banner button {
-    cursor: pointer !important;
-    touch-action: manipulation !important;
-}

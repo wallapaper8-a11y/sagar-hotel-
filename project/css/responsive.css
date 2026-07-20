@@ -68,20 +68,6 @@ header .container {
     max-width: 100% !important;
     box-sizing: border-box;
 }
-/* Gallery performance aur mobile side scroll protection */
-.gallery-grid, 
-.gallery-container,
-.gallery-item {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Images ko viewport se bahar stretch hone se rokne ke liye */
-.gallery-item img {
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: cover;
-}
 /* ---- COOKIE BANNER MOBILE FIX ---- */
 .cookie-banner, 
 #cookie-banner, 
